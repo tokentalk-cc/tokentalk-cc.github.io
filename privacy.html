@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 — TokenTalk</title>
+  <meta name="description" content="TokenTalk 隐私政策 — 了解我们如何收集、使用和保护您的数据。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-secondary: #111119;
+      --bg-card: #16161f;
+      --accent: #3b82f6;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --border: rgba(255,255,255,0.06);
+      --radius: 16px;
+      --max-width: 860px;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg-primary); color: var(--text-primary); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,10,15,0.75); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-primary); font-weight: 700; font-size: 1.1rem; }
+    .nav-logo { width: 32px; height: 32px; background: linear-gradient(135deg, var(--accent), #8b5cf6); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--text-primary); }
+    .lang-toggle { display: flex; background: var(--bg-card); border-radius: 100px; padding: 3px; border: 1px solid var(--border); }
+    .lang-btn { background: none; border: none; color: var(--text-secondary); padding: 4px 12px; border-radius: 100px; cursor: pointer; font-size: 0.8rem; transition: all .2s; }
+    .lang-btn.active { background: var(--accent); color: white; }
+
+    /* CONTENT */
+    .content { max-width: var(--max-width); margin: 0 auto; padding: 100px 24px 80px; }
+    .page-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .page-label { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px; }
+    .page-title { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 12px; }
+    .page-meta { color: var(--text-secondary); font-size: 0.9rem; }
+
+    .section { margin-bottom: 40px; }
+    .section h2 { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .section h3 { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin: 20px 0 8px; }
+    .section p { color: var(--text-secondary); margin-bottom: 12px; font-size: 0.95rem; }
+    .section ul { color: var(--text-secondary); padding-left: 20px; margin-bottom: 12px; font-size: 0.95rem; }
+    .section ul li { margin-bottom: 6px; }
+    .section a { color: var(--accent); text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+
+    .highlight-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 16px; }
+    .highlight-box p { margin-bottom: 0; }
+
+    /* FOOTER */
+    .footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; }
+    .footer p { color: var(--text-secondary); font-size: 0.85rem; }
+    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <div class="nav-logo">💬</div>
+        <span>TokenTalk</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">首页</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" onclick="switchLang('zh')">中</button>
+          <button class="lang-btn" onclick="switchLang('en')">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- ZH -->
+    <div id="content-zh">
+      <div class="page-header">
+        <div class="page-label">法律文件</div>
+        <h1 class="page-title">隐私政策</h1>
+        <p class="page-meta">最后更新：2025年5月13日 &nbsp;·&nbsp; 生效日期：2025年5月13日</p>
+      </div>
+
+      <div class="highlight-box">
+        <p>TokenTalk（"我们"、"本公司"）非常重视您的隐私。本政策说明我们在您使用 TokenTalk 应用程序及相关服务时如何收集、使用和保护您的信息。请在使用前仔细阅读。</p>
+      </div>
+
+      <div class="section">
+        <h2>1. 我们收集的信息</h2>
+        <h3>1.1 您主动提供的信息</h3>
+        <ul>
+          <li><strong>账户信息</strong>：用户名、头像（可选）</li>
+          <li><strong>钱包信息</strong>：公钥地址（私钥仅存储在您的设备本地，我们无法访问）</li>
+          <li><strong>通讯内容</strong>：消息、图片、语音（端到端加密，我们无法解密）</li>
+        </ul>
+        <h3>1.2 自动收集的信息</h3>
+        <ul>
+          <li><strong>设备信息</strong>：设备型号、操作系统版本、唯一设备标识符</li>
+          <li><strong>使用数据</strong>：功能使用频率、崩溃报告、性能数据</li>
+          <li><strong>网络信息</strong>：IP 地址、连接类型</li>
+        </ul>
+        <h3>1.3 权限说明</h3>
+        <ul>
+          <li><strong>相机（android.permission.CAMERA）</strong>：用于拍摄头像、发送图片及扫描二维码（钱包地址/好友添加）</li>
+          <li><strong>麦克风（android.permission.RECORD_AUDIO）</strong>：用于发送语音消息</li>
+          <li><strong>存储（READ/WRITE_EXTERNAL_STORAGE）</strong>：用于保存和发送图片、文件</li>
+          <li><strong>通知（POST_NOTIFICATIONS）</strong>：用于接收消息推送和链上事件提醒</li>
+          <li><strong>生物识别（USE_BIOMETRIC）</strong>：用于钱包解锁和交易确认</li>
+          <li><strong>网络（INTERNET）</strong>：用于消息传输和区块链交互</li>
+        </ul>
+        <p>所有权限均在使用时请求，您可以随时在系统设置中撤销。拒绝某项权限仅影响对应功能，不影响其他功能的正常使用。</p>
+      </div>
+
+      <div class="section">
+        <h2>2. 信息的使用方式</h2>
+        <p>我们使用收集的信息用于：</p>
+        <ul>
+          <li>提供、维护和改进 TokenTalk 服务</li>
+          <li>处理消息传输和区块链交互</li>
+          <li>发送服务通知（如安全提醒、功能更新）</li>
+          <li>分析使用模式以优化用户体验</li>
+          <li>检测和防止欺诈、滥用及安全威胁</li>
+          <li>遵守适用的法律法规</li>
+        </ul>
+        <p>我们<strong>不会</strong>将您的个人信息出售给第三方，也不会将其用于广告定向投放。</p>
+      </div>
+
+      <div class="section">
+        <h2>3. 数据存储与安全</h2>
+        <h3>3.1 私钥与助记词</h3>
+        <p>您的私钥和助记词<strong>仅存储在您的设备本地</strong>（iOS Secure Enclave / Android Keystore），通过生物识别或密码保护。TokenTalk 服务器从不接触、存储或传输您的私钥。</p>
+        <h3>3.2 消息加密</h3>
+        <p>所有点对点消息均采用端到端加密（E2EE）。消息在发送前在您的设备上加密，仅接收方可解密。TokenTalk 服务器仅传输加密数据，无法读取消息内容。</p>
+        <h3>3.3 服务器数据</h3>
+        <p>账户元数据（用户名、头像等）存储在我们的服务器上，采用行业标准加密措施保护。我们的服务器位于香港及主要云服务提供商的数据中心。</p>
+        <h3>3.4 数据保留</h3>
+        <p>我们仅在提供服务所需的时间内保留您的数据。您删除账户后，我们将在 30 天内删除您的个人数据（法律要求保留的除外）。</p>
+      </div>
+
+      <div class="section">
+        <h2>4. 信息共享</h2>
+        <p>我们不会出售您的个人信息。在以下情况下，我们可能共享您的信息：</p>
+        <ul>
+          <li><strong>服务提供商</strong>：与协助我们运营服务的可信第三方（如云存储、推送通知服务），这些方受保密协议约束</li>
+          <li><strong>法律要求</strong>：在法律要求或保护用户安全的情况下</li>
+          <li><strong>业务转让</strong>：在合并、收购或资产出售时，我们会提前通知您</li>
+          <li><strong>您的同意</strong>：在获得您明确同意的情况下</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>5. 第三方服务</h2>
+        <p>TokenTalk 集成了以下第三方服务，各自适用其隐私政策：</p>
+        <ul>
+          <li><strong>区块链网络</strong>：Ethereum、Solana、BNB Chain 等（交易数据公开记录在链上）</li>
+          <li><strong>Firebase（Google）</strong>：崩溃报告和推送通知</li>
+          <li><strong>JuggleIM</strong>：即时通讯基础设施</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>6. 儿童隐私</h2>
+        <p>TokenTalk 不面向 13 岁以下儿童。我们不会故意收集儿童的个人信息。如果您发现我们无意中收集了儿童信息，请联系我们，我们将立即删除。</p>
+      </div>
+
+      <div class="section">
+        <h2>7. 您的权利</h2>
+        <p>根据适用法律，您享有以下权利：</p>
+        <ul>
+          <li><strong>访问权</strong>：查看我们持有的您的个人数据</li>
+          <li><strong>更正权</strong>：更正不准确的个人数据</li>
+          <li><strong>删除权</strong>：请求删除您的个人数据</li>
+          <li><strong>可携带权</strong>：以结构化格式获取您的数据</li>
+          <li><strong>撤回同意</strong>：随时撤回您之前给予的同意</li>
+        </ul>
+        <p>如需行使上述权利，请通过以下方式联系我们。</p>
+      </div>
+
+      <div class="section">
+        <h2>8. 政策变更</h2>
+        <p>我们可能会不时更新本隐私政策。重大变更时，我们将通过应用内通知或电子邮件提前告知您。继续使用服务即表示您接受更新后的政策。</p>
+      </div>
+
+      <div class="section">
+        <h2>9. 联系我们</h2>
+        <p>如有任何隐私相关问题或请求，请联系：</p>
+        <div class="highlight-box">
+          <p><strong>Token Talk Limited</strong><br>
+          Rm D07 8/F Kai Tak Fty Bldg, 99 King Fuk St, Kowloon, Hong Kong<br>
+          邮箱：<a href="mailto:privacy@tokentalk.cc">privacy@tokentalk.cc</a><br>
+          网站：<a href="https://tokentalk.cc">https://tokentalk.cc</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EN -->
+    <div id="content-en" style="display:none">
+      <div class="page-header">
+        <div class="page-label">Legal</div>
+        <h1 class="page-title">Privacy Policy</h1>
+        <p class="page-meta">Last updated: May 13, 2025 &nbsp;·&nbsp; Effective: May 13, 2025</p>
+      </div>
+
+      <div class="highlight-box">
+        <p>TokenTalk ("we", "us", "our") takes your privacy seriously. This policy explains how we collect, use, and protect your information when you use the TokenTalk app and related services. Please read carefully before use.</p>
+      </div>
+
+      <div class="section">
+        <h2>1. Information We Collect</h2>
+        <h3>1.1 Information You Provide</h3>
+        <ul>
+          <li><strong>Account information</strong>: Username, profile photo (optional)</li>
+          <li><strong>Wallet information</strong>: Public key addresses (private keys are stored only on your device — we cannot access them)</li>
+          <li><strong>Communications</strong>: Messages, images, voice notes (end-to-end encrypted — we cannot decrypt them)</li>
+        </ul>
+        <h3>1.2 Automatically Collected Information</h3>
+        <ul>
+          <li><strong>Device information</strong>: Device model, OS version, unique device identifiers</li>
+          <li><strong>Usage data</strong>: Feature usage frequency, crash reports, performance data</li>
+          <li><strong>Network information</strong>: IP address, connection type</li>
+        </ul>
+        <h3>1.3 Permissions</h3>
+        <ul>
+          <li><strong>Camera (android.permission.CAMERA)</strong>: For taking profile photos, sending images, and scanning QR codes (wallet addresses / adding friends)</li>
+          <li><strong>Microphone (android.permission.RECORD_AUDIO)</strong>: For sending voice messages</li>
+          <li><strong>Storage (READ/WRITE_EXTERNAL_STORAGE)</strong>: For saving and sending images and files</li>
+          <li><strong>Notifications (POST_NOTIFICATIONS)</strong>: For receiving message push notifications and on-chain event alerts</li>
+          <li><strong>Biometrics (USE_BIOMETRIC)</strong>: For wallet unlock and transaction confirmation</li>
+          <li><strong>Internet (INTERNET)</strong>: For message transmission and blockchain interaction</li>
+        </ul>
+        <p>All permissions are requested at the time of use. You can revoke any permission in your system settings at any time. Denying a permission only affects the corresponding feature and does not impact other functionality.</p>
+      </div>
+
+      <div class="section">
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+          <li>Provide, maintain, and improve TokenTalk services</li>
+          <li>Process message delivery and blockchain interactions</li>
+          <li>Send service notifications (e.g., security alerts, feature updates)</li>
+          <li>Analyze usage patterns to optimize user experience</li>
+          <li>Detect and prevent fraud, abuse, and security threats</li>
+          <li>Comply with applicable laws and regulations</li>
+        </ul>
+        <p>We <strong>do not</strong> sell your personal information to third parties or use it for targeted advertising.</p>
+      </div>
+
+      <div class="section">
+        <h2>3. Data Storage &amp; Security</h2>
+        <h3>3.1 Private Keys &amp; Seed Phrases</h3>
+        <p>Your private keys and seed phrases are stored <strong>only on your device</strong> (iOS Secure Enclave / Android Keystore), protected by biometrics or passcode. TokenTalk servers never access, store, or transmit your private keys.</p>
+        <h3>3.2 Message Encryption</h3>
+        <p>All peer-to-peer messages use end-to-end encryption (E2EE). Messages are encrypted on your device before sending and can only be decrypted by the recipient. TokenTalk servers only relay encrypted data and cannot read message content.</p>
+        <h3>3.3 Server Data</h3>
+        <p>Account metadata (username, profile photo, etc.) is stored on our servers with industry-standard encryption. Our servers are located in Hong Kong and major cloud provider data centers.</p>
+        <h3>3.4 Data Retention</h3>
+        <p>We retain your data only as long as necessary to provide our services. After account deletion, we will delete your personal data within 30 days (except where required by law).</p>
+      </div>
+
+      <div class="section">
+        <h2>4. Information Sharing</h2>
+        <p>We do not sell your personal information. We may share your information in the following circumstances:</p>
+        <ul>
+          <li><strong>Service providers</strong>: Trusted third parties that help us operate our services (e.g., cloud storage, push notification services), bound by confidentiality agreements</li>
+          <li><strong>Legal requirements</strong>: When required by law or to protect user safety</li>
+          <li><strong>Business transfers</strong>: In the event of a merger, acquisition, or asset sale, we will notify you in advance</li>
+          <li><strong>With your consent</strong>: When you have given explicit consent</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>5. Third-Party Services</h2>
+        <p>TokenTalk integrates the following third-party services, each subject to their own privacy policies:</p>
+        <ul>
+          <li><strong>Blockchain networks</strong>: Ethereum, Solana, BNB Chain, etc. (transaction data is publicly recorded on-chain)</li>
+          <li><strong>Firebase (Google)</strong>: Crash reporting and push notifications</li>
+          <li><strong>JuggleIM</strong>: Instant messaging infrastructure</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>6. Children's Privacy</h2>
+        <p>TokenTalk is not directed at children under 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us and we will delete it immediately.</p>
+      </div>
+
+      <div class="section">
+        <h2>7. Your Rights</h2>
+        <p>Under applicable law, you have the following rights:</p>
+        <ul>
+          <li><strong>Access</strong>: View the personal data we hold about you</li>
+          <li><strong>Correction</strong>: Correct inaccurate personal data</li>
+          <li><strong>Deletion</strong>: Request deletion of your personal data</li>
+          <li><strong>Portability</strong>: Receive your data in a structured format</li>
+          <li><strong>Withdraw consent</strong>: Withdraw previously given consent at any time</li>
+        </ul>
+        <p>To exercise these rights, please contact us using the details below.</p>
+      </div>
+
+      <div class="section">
+        <h2>8. Policy Changes</h2>
+        <p>We may update this Privacy Policy from time to time. For significant changes, we will notify you in advance via in-app notification or email. Continued use of the service constitutes acceptance of the updated policy.</p>
+      </div>
+
+      <div class="section">
+        <h2>9. Contact Us</h2>
+        <p>For any privacy-related questions or requests, please contact:</p>
+        <div class="highlight-box">
+          <p><strong>Token Talk Limited</strong><br>
+          Rm D07 8/F Kai Tak Fty Bldg, 99 King Fuk St, Kowloon, Hong Kong<br>
+          Email: <a href="mailto:privacy@tokentalk.cc">privacy@tokentalk.cc</a><br>
+          Website: <a href="https://tokentalk.cc">https://tokentalk.cc</a></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2025 TokenTalk · Token Talk Limited · <a href="/">首页</a> · <a href="mailto:privacy@tokentalk.cc">privacy@tokentalk.cc</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('content-zh').style.display = lang === 'zh' ? 'block' : 'none';
+      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        if ((lang === 'zh' && b.textContent === '中') || (lang === 'en' && b.textContent === 'EN')) {
+          b.classList.add('active');
+        }
+      });
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    }
+
+    // Nav background on scroll
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.style.background = window.scrollY > 50 ? 'rgba(10,10,15,0.9)' : 'rgba(10,10,15,0.75)';
+    });
+  </script>
+</body>
+</html>
